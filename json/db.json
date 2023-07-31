@@ -1,0 +1,156 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "admin",
+      "email": "alfadmin@hotmail.com",
+      "contrasena": "1234"
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Camiseta Adidas",
+      "precio": 70,
+      "imagen": "https://i.postimg.cc/Jh21mzJz/camiseta-adidas.png",
+      "categoria": "Camisetas",
+      "descripcion": "Estilo y rendimiento con el logo icónico. Experimenta el máximo confort y estilo deportivo con la icónica camiseta Adidas, perfecta para el día a día y entrenamientos intensos."
+    },
+    {
+      "id": 2,
+      "nombre": "Camiseta Avengers",
+      "precio": 70,
+      "imagen": "https://i.postimg.cc/HsgTTKJX/camiseta-avengers.png",
+      "categoria": "Camisetas",
+      "descripcion": "Únete a los héroes más poderosos del universo con esta camiseta de alta calidad y diseño épico, ideal para fans de Marvel."
+    },
+    {
+      "id": 3,
+      "nombre": "Camiseta Colombia",
+      "precio": 75,
+      "imagen": "https://i.postimg.cc/D0VnJpxV/camiseta-colombia.png",
+      "categoria": "Camisetas",
+      "descripcion": " Lleva el orgullo de tu país en el corazón con esta camiseta oficial de la Selección Colombia, confeccionada con los mejores materiales para un ajuste perfecto. Demuestra tu orgullo por tu país con esta camiseta oficial."
+    },
+    {
+      "id": 4,
+      "nombre": "Camiseta Marvel",
+      "precio": 50,
+      "imagen": "https://i.postimg.cc/0y9503PP/camiseta-marvel-o.png",
+      "categoria": "Camisetas",
+      "descripcion": "Rinde homenaje a tus superhéroes favoritos con esta camiseta clásica de Marvel, con impresiones de alta resolución y comodidad inigualable. Diseño clásico para los verdaderos fanáticos de Marvel."
+    },
+    {
+      "nombre": "Camiseta Marvel Moderna",
+      "precio": "55.00",
+      "imagen": "https://i.postimg.cc/c1YsyZJd/camiseta-marvel.png",
+      "categoria": "Camisetas",
+      "descripcion": "Un giro moderno y contemporáneo en el estilo clásico de Marvel, esta camiseta combina moda y pasión por los cómics en un solo diseño asombroso.",
+      "id": "3d90f144-279d-4e47-9601-98fa40cda00c"
+    },
+    {
+      "nombre": "Camiseta Spiderman",
+      "precio": "57.00",
+      "imagen": "https://i.postimg.cc/SNfkRr85/camiseta-spiderman.png",
+      "categoria": "Camisetas",
+      "descripcion": "Siente el poder arácnido con esta increíble camiseta de Spiderman, que presenta un diseño detallado y colores vibrantes. Lleva el espíritu arácnido.",
+      "id": "8d179458-7c80-4f5e-ab5f-a040bd8b24b9"
+    },
+    {
+      "nombre": "Figura Batman",
+      "precio": "40.00",
+      "imagen": "https://i.postimg.cc/cJrSDGjy/figura-batman.png",
+      "categoria": "Figuras",
+      "descripcion": "Eleva tu colección con la figura de Batman de Hot Toys, una obra maestra que captura cada detalle del Caballero Oscuro, ¡una pieza imprescindible!",
+      "id": "24c99f7c-dc66-4802-8dca-81ffd42b1272"
+    },
+    {
+      "nombre": "Figura Capitán América",
+      "precio": "45.00",
+      "imagen": "https://i.postimg.cc/XJBnv6cc/figura-capitan-america.jpg",
+      "categoria": "Figuras",
+      "descripcion": "Celebra la valentía y el patriotismo con la figura del Capitán América de Hot Toys, una representación increíble del héroe emblemático de Marvel. ",
+      "id": "efba27c6-35cd-4a99-b73d-f78a937be50c"
+    },
+    {
+      "nombre": "Figura IronMan",
+      "precio": "50.00",
+      "imagen": "https://i.postimg.cc/zGD5ggFf/figura-iron-man.jpg",
+      "categoria": "Figuras",
+      "descripcion": "Trae la genialidad y tecnología de Tony Stark a tu hogar con esta figura de Ironman altamente articulada y llena de detalles, una pieza impresionante.",
+      "id": "82c97b79-e813-43fe-93f7-5f8804a8f63b"
+    },
+    {
+      "nombre": "Figura SpiderMan",
+      "precio": "55.00",
+      "imagen": "https://i.postimg.cc/W19V615w/figura-spiderman.jpg",
+      "categoria": "Figuras",
+      "descripcion": "Siente cómo el trepamuros cobra vida con esta figura de Spiderman de Hot Toys, con pose excepcional y accesorios para recrear épicas escenas de acción",
+      "id": "b340f954-0c65-4ca2-abe1-3954bbebdd64"
+    },
+    {
+      "nombre": "Figura SuperMan",
+      "precio": "55.00",
+      "imagen": "https://i.postimg.cc/PxDkjzTS/figura-superman.jpg",
+      "categoria": "Figuras",
+      "descripcion": "Revive la grandeza del Hombre de Acero con la figura de Superman de Hot Toys, que presenta una escultura meticulosa y accesorios realistas.",
+      "id": "8bcde50a-6e5c-442c-8685-535df1e61135"
+    },
+    {
+      "nombre": "Figura Thor",
+      "precio": "53.00",
+      "imagen": "https://i.postimg.cc/brjfNDvp/figura-thor.jpg",
+      "categoria": "Figuras",
+      "descripcion": "El poderoso Dios del Trueno cobra vida con esta figura de Hot Toys, que presenta un martillo Mjölnir intercambiable y expresiones faciales dinámicas.",
+      "id": "39f48a0a-e2b5-4715-afa6-0c094901beb4"
+    },
+    {
+      "nombre": "Control PS4",
+      "precio": "75.00",
+      "imagen": "https://i.postimg.cc/3Ng7gjqk/control-ps4.png",
+      "categoria": "Consolas",
+      "descripcion": "Experimenta un control de juego perfecto con el control inalámbrico DualShock 4 para PlayStation 4, diseñado para brindar precisión y comodidades.",
+      "id": "ea67203e-ca5e-4a10-a185-5c72e59e40a0"
+    },
+    {
+      "nombre": "Control Xbox360",
+      "precio": "70.00",
+      "imagen": "https://i.postimg.cc/J4N4Jmwp/control-xbox.png",
+      "categoria": "Consolas",
+      "descripcion": "Conviértete en el dueño del campo de batalla con el control Xbox 360, con su diseño ergonómico y botones de respuesta rápida.",
+      "id": "f40f4ff3-2ab4-41ad-81fb-be46995dd6fa"
+    },
+    {
+      "nombre": "Nintendo 3DS",
+      "precio": "77.00",
+      "imagen": "https://i.postimg.cc/1RpZ7HWt/nintendo-3ds.png",
+      "categoria": "Consolas",
+      "descripcion": "Descubre un mundo de entretenimiento portátil en 3D con la consola Nintendo 3DS, que ofrece gráficos sorprendentes y una amplia biblioteca de juegos.",
+      "id": "9299421c-fe85-45de-aa64-feb7a9005fe1"
+    },
+    {
+      "nombre": "Nintendo Switch",
+      "precio": "79.00",
+      "imagen": "https://i.postimg.cc/Hsd1qyKt/nintendo-switch.png",
+      "categoria": "Consolas",
+      "descripcion": "Juega sin límites con la consola Nintendo Switch, que se adapta a tu estilo de vida con su versatilidad única y una experiencia de juego inigualable.",
+      "id": "73b9e95f-17dd-425a-a654-39e39d5d2585"
+    },
+    {
+      "nombre": "PS3",
+      "precio": "85.00",
+      "imagen": "https://i.postimg.cc/jSj05rRw/ps3.png",
+      "categoria": "Consolas",
+      "descripcion": "Sumérgete en la emoción del juego con la consola PlayStation 3, que ofrece potentes gráficos y una amplia selección de títulos para disfrutar.",
+      "id": "b156ff3e-598c-41f5-be2c-7624e0a81f4d"
+    },
+    {
+      "nombre": "Xbox One",
+      "precio": "90.00",
+      "imagen": "https://i.postimg.cc/ZKHz4qzz/xboxOne.jpg",
+      "categoria": "Consolas",
+      "descripcion": "Experimenta la próxima generación de juegos con la consola Xbox One, que ofrece un rendimiento impresionante y una amplia gama de entretenimiento.",
+      "id": "f85e56ad-6995-474c-9ae6-fe8344545df9"
+    }
+  ]
+}

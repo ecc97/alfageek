@@ -1,0 +1,252 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url(scrollStyles.css);
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+    background-color: var(--color-fondo-claro); 
+    animation: changeColor 10s infinite;
+    color: var(--color-negro);
+}
+/*Cabecera*/
+header.cabecera{
+    display: flex;
+    flex-direction: column;  
+}
+
+.encabezado{
+    background-image: url(../assets/img/banner-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(50,50,50);
+    background-blend-mode: soft-light;
+    background-attachment: scroll;
+    display: flex;
+    color: var(--color-blanco);
+    height: 352px;
+}
+.encabezado--info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin: 2rem 5rem;
+}
+.encabezado--info_titulo{
+    font-size: 2rem;
+}
+.encabezado--info_texto{
+    font-size: 1.5rem;
+}
+.encabezado--info_boton{
+    width: 97px;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    transition: .5s ease;
+}
+.encabezado--info_boton:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+/*Sección productos*/
+main{
+    margin: var(--espaciado-lados);
+}
+.contenido-principal{
+    margin-top: 3rem;
+}
+section.camisetas, .figuras, .consolas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
+    scroll-margin-top: 3rem;
+}
+article.camisetas--titulo-detalle, .figuras--titulo-detalle, .consolas--titulo-detalle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.camisetas--titulo-detalle > h2, .figuras--titulo-detalle > h2, .consolas--titulo-detalle > h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.camisetas--titulo-detalle > a, .figuras--titulo-detalle > a, .consolas--titulo-detalle > a{
+    display: flex;
+    align-items: center;
+    color: var(--color-azul);
+    text-decoration: none;
+    gap: .5rem;
+    font-weight: bold;
+}
+.flecha{
+    color: var(--color-azul);
+    font-weight: bold;
+}
+.camisetas--listado, .figuras--listado, .consolas--listado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.camisetas--camiseta, .figuras--figura, .consolas--consola{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    transition: .5s;
+}
+.camisetas--camiseta > img, .figuras--figura > img, .consolas--consola > img{
+    width: 176px;
+    height: 174px;
+}
+.camisetas--camiseta_nombre, .figuras--figura_nombre, .consolas--consola_nombre{
+    font-weight: 500;
+}
+.camisetas--camiseta_precio, .figuras--figura_precio, .consolas--consola_precio{
+    font-weight: bold;
+}
+.camisetas-camiseta_link, .figuras--figura_link, .consolas--consola_link{
+    color: var(--color-azul);
+    text-decoration: none;
+    font-weight: 700;
+}
+.camisetas--camiseta:hover, .figuras--figura:hover, .consolas--consola:hover{
+    transform: scale(105%);
+    transition: .5s;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+@keyframes changeColor {
+  0% {
+    background-color: var(--color-fondo-claro);
+    color: var(--color-negro);
+  }
+  50% {
+    background-color: var(--color-fondo-oscuro);
+    color: var(--color-blanco);
+  }
+
+  0% {
+    background-color: var(--color-fondo-claro);
+    color: var(--color-negro);
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .camisetas--listado, .figuras--listado, .consolas--listado{
+        width: calc(100% + 2%);
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .encabezado{
+        height: 100%;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    main{
+        margin: var(--espaciado-lados-t);
+    }
+    .encabezado{
+        height: 100%;
+        justify-content: center;
+        background-position: center;
+        padding: var(--espaciado-lados-t);
+    }
+    .encabezado--info{
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0rem;
+    }
+    .camisetas--listado, .figuras--listado, .consolas--listado{
+        justify-content: space-around;
+        gap: 1rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    main{
+        margin: var(--espaciado-lados-ac);
+    }
+    .encabezado{
+        height: 100%;
+        justify-content: center;
+        background-position: center;
+        padding: var(--espaciado-lados-ac);
+    }
+    .encabezado--info{
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0rem;
+    }
+    .encabezado--info_titulo{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .encabezado--info_texto{
+        text-align: center;
+    }
+    .encabezado--info_boton{
+        width: 100%;
+    }
+    .camisetas--listado, .figuras--listado, .consolas--listado{
+        justify-content: space-around;
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 399px){   
+    .camisetas--camiseta, .figuras--figura, .consolas--consola{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .camisetas--camiseta > img, .figuras--figura > img, .consolas--consola > img{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    main{
+        margin: var(--espaciado-lados-c);
+    }
+    .encabezado{
+        height: 100%;
+        justify-content: center;
+        background-position: center;
+        padding: var(--espaciado-lados-c);
+    }
+    .encabezado--info{
+        align-items: center;
+        justify-content: center;
+        margin: 3rem 0rem;
+    }
+    .encabezado--info_titulo{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .encabezado--info_texto{
+        text-align: center;
+    }
+    .encabezado--info_boton{
+        width: 100%;
+    }
+    .camisetas--titulo-detalle, .figuras--titulo-detalle, .consolas--titulo-detalle{
+        flex-direction: column;
+        justify-content: center !important;
+        gap: 1rem;
+    }
+    .camisetas--listado, .figuras--listado, .consolas--listado{
+        justify-content: space-around;
+        gap: 1rem;
+    }
+}

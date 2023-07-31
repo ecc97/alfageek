@@ -1,0 +1,41 @@
+    /* Estilos para WebKit (Chrome y Safari) */
+    ::-webkit-scrollbar {
+        width: 13px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 7px;
+    }
+
+    /* Estilos para Firefox 
+      scrollbar-width: thin;
+      scrollbar-color: #888 #f0f0f0;
+      */
+
+    ::-moz-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 7px;
+    }
+
+    ::-moz-scrollbar-track {
+        background-color: #f0f0f0;
+    }
+
+    ::-moz-scrollbar-corner {
+        background-color: #f0f0f0;
+    }
+
+    ::-moz-resizer {
+        background-color: #f0f0f0;
+    }
+
+    /* Estilos para Microsoft Edge e Internet Explorer 10 y 11 */
+    ::-ms-scrollbar {
+        width: 13px;
+    }
+
+    ::-ms-thumb {
+        background-color: #888;
+        border-radius: 7px;
+    }

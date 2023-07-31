@@ -1,0 +1,197 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url(scrollStyles.css);
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo-claro); 
+    animation: changeColor 10s infinite;
+    color: var(--color-negro);
+}
+section.seccion-productos{
+    display: flex;
+    flex-direction: column;
+    margin: var(--espaciado-lados);
+    flex-grow: 1;
+}
+.productos{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    gap: 2rem;
+}
+.productos--titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.productos--titulo > h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.productos-listado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.producto-listado_item{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    transition: .5s;
+}
+.producto-img-mod{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.producto-img-mod > img{
+    width: 176px;
+    height: 174px;
+}
+.producto-img-mod > .mod{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+.mod > button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.borrar{
+    background-color: var(--color-blanco);
+    color: var(--color-warning);
+    opacity: .7;
+    border-radius: 50%;
+}
+.editar{
+    background-color: var(--color-blanco);
+    color: var(--color-azul-cielo);
+    opacity: .7;
+    border-radius: 50%;
+}
+.info-items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    transition: .5s;
+}
+.info-items_nombre{
+    font-weight: 500;
+}
+.info-items_precio{
+    font-weight: bold;
+}
+.info-items_link{
+    color: var(--color-azul);
+    text-decoration: none;
+    font-weight: 700;
+}
+.no-encontrado {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    font-size: 2rem;
+}
+.producto-listado_item:hover{
+    transform: scale(105%);
+    transition: .5s;
+    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
+}
+@keyframes changeColor {
+    0% {
+      background-color: var(--color-fondo-claro);
+      color: var(--color-negro);
+    }
+    50% {
+      background-color: var(--color-fondo-oscuro);
+      color: var(--color-blanco);
+    }
+  
+    0% {
+      background-color: var(--color-fondo-claro);
+      color: var(--color-negro);
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+    .seccion-productos{
+        margin: var(--espaciado-lados-t) !important;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 700px) {
+    .seccion-productos{
+        margin: var(--espaciado-lados-t) !important;
+    }
+    .productos-listado{
+        gap: 0.313rem;
+    }
+    .producto-img-mod > img{
+        width: calc(176px - 3px);
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .seccion-productos{
+        margin: var(--espaciado-lados-ac) !important;
+    }
+    .productos-listado{
+        gap: 1rem;
+        width: 100%;
+    }
+    .producto-listado_item {
+        width: 100%;
+        text-align: center;
+    }
+    .producto-img-mod > img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 399px) {
+    .seccion-productos{
+        margin: var(--espaciado-lados-c) !important;
+    }
+    .productos--titulo{
+        justify-content: center;
+    }
+    .productos--titulo > h2{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+    .seccion-productos{
+        margin: var(--espaciado-lados-c) !important;
+    }
+    .productos--titulo{
+        justify-content: center;
+    }
+    .productos--titulo > h2{
+        text-align: center;
+    }
+    .productos-listado{
+        gap: 1rem;
+        width: 100%;
+    }
+    .producto-listado_item {
+        width: 100%;
+        text-align: center;
+    }
+    .producto-img-mod > img{
+        width: 100%;
+    }
+}

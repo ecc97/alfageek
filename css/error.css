@@ -1,0 +1,69 @@
+@import url(reset.css);
+@import url(variables.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url(scrollStyles.css);
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--fuente-principal);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-fondo-claro); 
+    color: var(--color-negro);
+}
+
+.error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--espaciado-lados);
+    height: 500px;
+    flex-grow: 1;
+}
+.error_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 720px;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 2px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.error-icon {
+    width: 6.25rem;
+    font-size: 6.25rem;
+    color: var(--color-warning);
+}
+.titulo-error{
+    font-size: 2rem;
+    width: 20rem;
+}
+.boton-error {
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+    width: 100%;
+    max-width: 20rem;
+    padding: 1.125rem;
+    font-size: 1.438rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 0px) and (max-width: 770px) {
+    .error{
+        margin: var(--espaciado-lados-c);
+    }
+    .error_box{
+        width: 100%;
+        padding: 0;
+        box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+    }
+}

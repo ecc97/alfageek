@@ -1,0 +1,16 @@
+:root{
+    --fuente-principal: 'Raleway', sans-serif;
+    --color-azul: #2A7AE4;
+    --color-azul-cielo: #00acee;
+    --color-blanco: white;
+    --color-negro: black;
+    --color-gris: gray;
+    --color-fondo-claro: #D6EAF8;
+    --color-fondo-oscuro: #322C99;
+    --color-mensaje-completado: #5DADE2;
+    --color-warning: #ff0f0f;
+    --espaciado-lados: 0 5rem;
+    --espaciado-lados-t: 0 4rem;
+    --espaciado-lados-ac: 0 3rem;
+    --espaciado-lados-c: 0 1.5rem;
+}
