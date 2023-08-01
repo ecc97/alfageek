@@ -1,0 +1,24 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "![logo](https://github.com/ecc97/prueba-ag/assets/116367626/1fe7366f-0b93-4108-bfa1-8b6c51ac7fcd)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecc97/alfageek.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecc97/alfageek/issues"
+  },
+  "homepage": "https://github.com/ecc97/alfageek#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "json-server": "^0.17.3"
+  }
+}
