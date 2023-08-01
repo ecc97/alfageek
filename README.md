@@ -18,37 +18,37 @@ https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?type=design&node-id=
 ___
 1. La página inicial con su catálogo
 ![Captura de pantalla 2023-07-31 154808](https://i.postimg.cc/Wpnfd8t4/Captura-de-pantalla-2023-07-31-154808.png)
-![Captura de pantalla 2023-07-31 154922](https://github.com/ecc97/prueba-ag/assets/116367626/e31ada0b-3f1a-49e1-a338-c108946b4dd6)
-![Captura de pantalla 2023-07-31 154946](https://github.com/ecc97/prueba-ag/assets/116367626/1f10a336-a2fb-4de1-83b5-9c73825d178a)
-![Captura de pantalla 2023-07-31 155010](https://github.com/ecc97/prueba-ag/assets/116367626/ea5d8dc6-6f54-46c7-9497-21b8eeb2dab8)  
+![Captura de pantalla 2023-07-31 154922](https://i.postimg.cc/RZf7HCGT/Captura-de-pantalla-2023-07-31-154922.png)
+![Captura de pantalla 2023-07-31 154946](https://i.postimg.cc/SNn7mfM3/Captura-de-pantalla-2023-07-31-154946.png)
+![Captura de pantalla 2023-07-31 155010](https://i.postimg.cc/zGRjFFDK/Captura-de-pantalla-2023-07-31-155010.png)  
 ___
 2. La página para iniciar sesión para administrador
 Para ingresar este es el correo eléctronico y la contraseña  
 alfadmin@hotmail.com  
 1234
-![Captura de pantalla 2023-07-31 155056](https://github.com/ecc97/prueba-ag/assets/116367626/a8a310d3-32c7-454d-8f1d-adf115684859)  
+![Captura de pantalla 2023-07-31 155056](https://i.postimg.cc/8CQbKfs3/Captura-de-pantalla-2023-07-31-155056.png)  
 ___
 3. La página para administrar productos con CRUD
-![Captura de pantalla 2023-07-31 155141](https://github.com/ecc97/prueba-ag/assets/116367626/8964f7d4-08df-4129-8b29-734ce114d362)  
+![Captura de pantalla 2023-07-31 155141](https://i.postimg.cc/m2K3k13D/Captura-de-pantalla-2023-07-31-155141.png)  
 ___
 4. A dar agregar producto te envía a la página agregar producto con un formulario para llenar los datos requeridos
-![Captura de pantalla 2023-07-31 155410](https://github.com/ecc97/prueba-ag/assets/116367626/6cf2188c-1fa6-4dc8-9524-e3ebe9b8f14a)  
+![Captura de pantalla 2023-07-31 155410](https://i.postimg.cc/q7sx9B37/Captura-de-pantalla-2023-07-31-155410.png)  
 ___
 5. Al dar click al botón agregar se crea el producto
-![Captura de pantalla 2023-07-31 155448](https://github.com/ecc97/prueba-ag/assets/116367626/cc3553b8-8c08-48f2-b9a7-877dc1502a6b)  
+![Captura de pantalla 2023-07-31 155448](https://i.postimg.cc/gjJyXvBw/Captura-de-pantalla-2023-07-31-155448.png)  
 ___
 6. Ahora para actualizar se da click en editar (icono de lapíz) y lo envía a la página de editar producto con el formulario debido
-![Captura de pantalla 2023-07-31 155520](https://github.com/ecc97/prueba-ag/assets/116367626/dbf90f55-ef29-43e9-9bff-41acab807a14)
-![Captura de pantalla 2023-07-31 155610](https://github.com/ecc97/prueba-ag/assets/116367626/23439203-8523-43f1-aa99-d35014e54ee3)  
+![Captura de pantalla 2023-07-31 155520](https://i.postimg.cc/k4wFgjw3/Captura-de-pantalla-2023-07-31-155520.png)
+![Captura de pantalla 2023-07-31 155610](https://i.postimg.cc/QtjJsLQJ/Captura-de-pantalla-2023-07-31-155610.png)  
 ___
 7. Al hacerle los cambios y dar click en actualizar el producto se actualiza
-![Captura de pantalla 2023-07-31 155740](https://github.com/ecc97/prueba-ag/assets/116367626/c220c6b3-6ff2-4be6-bf87-f55551ff9b67)  
+![Captura de pantalla 2023-07-31 155740](https://i.postimg.cc/1RCrxjfD/Captura-de-pantalla-2023-07-31-155740.png)  
 ___
 8. Ahora para eliminar se da click en eliminar (icono de basura) y sale una ventana de confirmación para confirmar si se elimina el producto o no, y se elimina éxitosamente en caso de eliminarlo
-![Captura de pantalla 2023-07-31 155913](https://github.com/ecc97/prueba-ag/assets/116367626/1dd282ee-f299-40a3-a3e0-514190b377e9)  
+![Captura de pantalla 2023-07-31 155913](https://i.postimg.cc/brBxQsKm/Captura-de-pantalla-2023-07-31-155913.png)  
 ___
 9. Página individual de cada producto y su descripción
-![Captura de pantalla 2023-07-31 160140](https://github.com/ecc97/prueba-ag/assets/116367626/b5905e88-abe0-4121-b4b6-65412d280c1e)  
+![Captura de pantalla 2023-07-31 160140](https://i.postimg.cc/N0c17hzv/Captura-de-pantalla-2023-07-31-160140.png)  
 ___
 
 ### Conclusión
