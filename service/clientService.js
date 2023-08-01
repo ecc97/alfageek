@@ -1,15 +1,15 @@
-const listaUsuarios = () => fetch('https://ecc97.github.io/alfageek/json/db.json').then((respuesta) => respuesta.json());
-const listaProductos = () => fetch('https://ecc97.github.io/alfageek/json/db.json').then((respuesta) => respuesta.json());
+const listaUsuarios = () => fetch('http://localhost:3000/usuarios').then((respuesta) => respuesta.json());
+const listaProductos = () => fetch('http://localhost:3000/productos').then((respuesta) => respuesta.json());
 
 const login = async (email, contrasena) => {
-    const respuesta = await fetch('https://ecc97.github.io/alfageek/json/db.json');
+    const respuesta = await fetch('http://localhost:3000/usuarios');
     const usuarios = await respuesta.json();
     const usuarioEncontrado = usuarios.find((usuario) => usuario.email === email && usuario.contrasena === contrasena);
     return { autenticado: !!usuarioEncontrado };
 };
 
 const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
-    return fetch('https://ecc97.github.io/alfageek/json/db.json', {
+    return fetch('http://localhost:3000/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,11 +19,11 @@ const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
 };
 
 const detalleProducto = (id) => {
-    return fetch(`https://ecc97.github.io/alfageek/json/db.json`).then((respuesta) => respuesta.json());
+    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) => {
-    return fetch(`https://ecc97.github.io/alfageek/json/db.json`, {
+    return fetch(`http://localhost:3000/productos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -33,13 +33,13 @@ const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) 
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`https://ecc97.github.io/alfageek/json/db.json`, {
+    return fetch(`http://localhost:3000/productos/${id}`, {
         method: 'DELETE'
     });
 };
 
 const verProductoLink = (id) => {
-    return fetch(`https://ecc97.github.io/alfageek/json/db.json`).then((respuesta) => respuesta.json());
+    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 export const clientService = {
