@@ -1,15 +1,15 @@
-const listaUsuarios = () => fetch('https://alfageek.vercel.app/usuarios').then((respuesta) => respuesta.json());
-const listaProductos = () => fetch('https://alfageek.vercel.app/productos').then((respuesta) => respuesta.json());
+const listaUsuarios = () => fetch('https://api-vercel-json-server.vercel.app/usuarios').then((respuesta) => respuesta.json());
+const listaProductos = () => fetch('https://api-vercel-json-server.vercel.app/productos').then((respuesta) => respuesta.json());
 
 const login = async (email, contrasena) => {
-    const respuesta = await fetch('https://alfageek.vercel.app/usuarios');
+    const respuesta = await fetch('https://api-vercel-json-server.vercel.app/usuarios');
     const usuarios = await respuesta.json();
     const usuarioEncontrado = usuarios.find((usuario) => usuario.email === email && usuario.contrasena === contrasena);
     return { autenticado: !!usuarioEncontrado };
 };
 
 const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
-    return fetch('https://alfageek.vercel.app/productos', {
+    return fetch('https://api-vercel-json-server.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,11 +19,11 @@ const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
 };
 
 const detalleProducto = (id) => {
-    return fetch(`https://alfageek.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://api-vercel-json-server.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) => {
-    return fetch(`https://alfageek.vercel.app/productos/${id}`, {
+    return fetch(`https://api-vercel-json-server.vercel.app/productos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -33,13 +33,13 @@ const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) 
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`https://alfageek.vercel.app/productos/${id}`, {
+    return fetch(`https://api-vercel-json-server.vercel.app/productos/${id}`, {
         method: 'DELETE'
     });
 };
 
 const verProductoLink = (id) => {
-    return fetch(`https://alfageek.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://api-vercel-json-server.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 export const clientService = {
