@@ -1,15 +1,15 @@
-const listaUsuarios = () => fetch('http://localhost:3000/usuarios').then((respuesta) => respuesta.json());
-const listaProductos = () => fetch('http://localhost:3000/productos').then((respuesta) => respuesta.json());
+const listaUsuarios = () => fetch('https://alfageek.vercel.app/usuarios').then((respuesta) => respuesta.json());
+const listaProductos = () => fetch('https://alfageek.vercel.app/productos').then((respuesta) => respuesta.json());
 
 const login = async (email, contrasena) => {
-    const respuesta = await fetch('http://localhost:3000/usuarios');
+    const respuesta = await fetch('https://alfageek.vercel.app/usuarios');
     const usuarios = await respuesta.json();
     const usuarioEncontrado = usuarios.find((usuario) => usuario.email === email && usuario.contrasena === contrasena);
     return { autenticado: !!usuarioEncontrado };
 };
 
 const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
-    return fetch('http://localhost:3000/productos', {
+    return fetch('https://alfageek.vercel.app/productos', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -19,11 +19,11 @@ const crearProducto = (nombre, precio, imagen, categoria, descripcion) => {
 };
 
 const detalleProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://alfageek.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alfageek.vercel.app/productos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
@@ -33,13 +33,13 @@ const actualizarProducto = (nombre, precio, imagen, categoria, descripcion, id) 
 };
 
 const eliminarProducto = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`, {
+    return fetch(`https://alfageek.vercel.app/productos/${id}`, {
         method: 'DELETE'
     });
 };
 
 const verProductoLink = (id) => {
-    return fetch(`http://localhost:3000/productos/${id}`).then((respuesta) => respuesta.json());
+    return fetch(`https://alfageek.vercel.app/productos/${id}`).then((respuesta) => respuesta.json());
 };
 
 export const clientService = {
