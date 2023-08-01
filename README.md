@@ -1,5 +1,5 @@
 # AlfaGeek (AluraGeek)
-![logo](https://github.com/ecc97/prueba-ag/assets/116367626/1fe7366f-0b93-4108-bfa1-8b6c51ac7fcd)
+![logo](https://i.postimg.cc/ydCrZrFD/logo.png)
 
 Este es un proyecto hecho, con el objetivo de completar un challenge frontend y demostrar habilidades adquiridas por los cursos impartidos de Alura, el desafío consiste en hacer un e-commerce con un crud y que recopila los datos haciendo peticiones fetch hacia datos de un archivo json. Todo esto siguiendo un patrón, como lo es el modelo de diseño de figma y un backlog en trello.
 
@@ -17,7 +17,7 @@ https://www.figma.com/file/NUd563IRcuwUGyFGTwPP5W/AluraGeek?type=design&node-id=
 ### Proceso y funcionalidad  
 ___
 1. La página inicial con su catálogo
-![Captura de pantalla 2023-07-31 154808](https://github.com/ecc97/prueba-ag/assets/116367626/1132d84a-6a52-4f71-846b-2619f38a268c)
+![Captura de pantalla 2023-07-31 154808](https://i.postimg.cc/Wpnfd8t4/Captura-de-pantalla-2023-07-31-154808.png)
 ![Captura de pantalla 2023-07-31 154922](https://github.com/ecc97/prueba-ag/assets/116367626/e31ada0b-3f1a-49e1-a338-c108946b4dd6)
 ![Captura de pantalla 2023-07-31 154946](https://github.com/ecc97/prueba-ag/assets/116367626/1f10a336-a2fb-4de1-83b5-9c73825d178a)
 ![Captura de pantalla 2023-07-31 155010](https://github.com/ecc97/prueba-ag/assets/116367626/ea5d8dc6-6f54-46c7-9497-21b8eeb2dab8)  
